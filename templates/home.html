@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='media/main.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="screen">
+    <img src="{{ url_for('static', filename='media/scanlines.png') }}" alt="pipboy" id="pipboy">
+    <div id="content">
+      <div class="header-wrapper">
+        <header>
+          <a id="active">Stat</a>
+          <a>Inv</a>
+          <a>Data</a>
+          <a>Map</a>
+          <a>Radio</a>
+        </header>
+      </div>
+
+      <div id="body">
+        <div class="character">
+          <img src="{{ url_for('static', filename='media/character.gif') }}" alt="character" id="character">
+        </div>
+        
+
+      </div>
+      
+      <div class="footer">
+        <div class="hp"><h3>Hp: 100</h3></div>
+        <div class="lvl"><h3>LEVEL 1</h3></div>
+        <div class="ap"><h3>AP 70/70</h3></div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
